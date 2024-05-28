@@ -1,8 +1,8 @@
 import phonenumbers
 from phonenumbers import geocoder
 from phonenumbers import timezone
-from TEST import number
 import folium
+number = input("ENTER MOBILE NUMBER (WITH COUNTRY CODE) : ")
 Key = "453b6c62ebeb4ac5b0af5bcaf6b36f7d"
 check_mobile_number = phonenumbers.parse(number)
 number_location = geocoder.description_for_number(check_mobile_number,'en')
